@@ -8,7 +8,7 @@ col_names = ['c{0:02d}'.format(i) for i in range(10)]
 #  ※読み込みテキストファイルのパス指定
 #  ※csv出力ファイルのパス指定
 ########################################################
-add_file_name = 'zyoho-me'
+add_file_name = 'kogaku-me'
 add_dir_name = './'
 
 #### 読み込みテキストファイルのパス指定
