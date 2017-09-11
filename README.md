@@ -11,6 +11,10 @@ Python3.6を使用
 python wakati.py 分かち書きさせたい文書.txt 分かち書き後に保存する文書.txt
 ```
 
+```stopword.py
+python stopword.py 分かち書き後のストップワードを除去したい文書.txt 除去後の文書.txt
+```
+
 ```train.py
 python train.py 分かち書きした文書.txt 適当なモデル名.model
 ```
