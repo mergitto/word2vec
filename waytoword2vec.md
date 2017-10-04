@@ -8,7 +8,7 @@
 1. 記号を削除したテキストを分かち書きする（~/Develop/word2vec/wakati.pyを使用）
 ワードクラウドを作成する場合はここを実行する。word2vecはここを飛ばす
 - ストップワードの除去を行う（~/Develop/word2vec/stopword.pyを使用）
-- mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd 分かち書きした.txt -o 返還後の.txt -E "" -F "%m,%H\n"\n
+- mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd 分かち書きした.txt -o 返還後の.txt -E "" -F "%m,%H\n"
 - 同フォルダのword2meishi.pyを使用して名詞のみを取り出して集計する
 - 集計したデータの１行目を"word,count"に変更して、同フォルダのindex.htmlでcsvの部分を変更
 1. 分かち書きしたテキストにword2vecで学習する（~/Develop/word2vec/train.py）
