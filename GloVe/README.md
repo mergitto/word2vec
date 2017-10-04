@@ -8,7 +8,6 @@
 1. `python glove2word2vec.py vectors.txt > 変換後のファイル.txt`
 1. `python similar.py glove2word2vecで変換したモデル.txt 検索したいワード`
 
-
-6.ではGloVeの出力ベクトルをword2vecで使用できるようにする
-7.では類似度を出力する
+5.ではGloVeの出力ベクトルをword2vecで使用できるようにする  
+6.では類似度を出力する  
 
