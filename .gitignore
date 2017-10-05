@@ -9,5 +9,6 @@ fastText/model.bin
 fastText/tmp-wiki/
 fastText/tmp/
 wiki-sug/
-sample
+sugSample/*.txt
+sugSample/*.csv
 word2meishi.py
