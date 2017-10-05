@@ -13,9 +13,11 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 sentences = word2vec.LineSentence(sys.argv[1])
 model = word2vec.Word2Vec(sentences,
                           sg=1,
-                          size=200,
-                          min_count=1,
-                          window=15,
-                          hs=1,
-                          negative=0)
+                          size=100, # ベクトルの次元数
+                          min_count=1, # n回未満出現する単語を削除
+                          window=15, # 学習する前後の単語数
+                          hs=1, # 学習にソフトマックス関数を使用するか
+                          iter=100, # 学習回数
+                          negative=0 # ネガティブサンプリングに用いる単語数
+                          )
 model.save(sys.argv[2])
