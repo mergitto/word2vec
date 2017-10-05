@@ -8,6 +8,9 @@
 fastText/model.bin
 fastText/tmp-wiki/
 fastText/tmp/
+fastText/model.vec
+fastText/model.o
+GloVe/*.bin
 wiki-sug/
 sugSample/*.txt
 sugSample/*.csv
