@@ -12,6 +12,7 @@
 学習後に任意の単語への類似度を出力する
 ~/Develop/word2vec/fastText/similar.pyを利用して
 ```
-python similar.py 任意の単語
+python similar.py モデル名(.vec, .binは抜かす) 任意の単語
 ```
+例：python similar.py model ほげ
 にて類似度順で10個の単語を出力させる

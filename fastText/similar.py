@@ -1,8 +1,8 @@
 from gensim.models.wrappers.fasttext import FastText
 import sys
 
-model = FastText.load_fasttext_format('model')
-result = model.most_similar(sys.argv[1])
+model = FastText.load_fasttext_format(sys.argv[1])
+result = model.most_similar(sys.argv[2])
 
 count = 1
 for r in result:
