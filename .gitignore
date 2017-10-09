@@ -5,11 +5,13 @@
 *.html
 *Advice2txt.py
 *vectors.bin
-fastText/model.bin
+fastText/*/*.bin
+fastText/*.bin
 fastText/tmp-wiki/
 fastText/tmp/
-fastText/model.vec
-fastText/model.o
+fastText/*/*.vec
+fastText/*.vec
+fastText/*/*.o
 GloVe/*.bin
 wiki-sug/
 sugSample/*.txt
