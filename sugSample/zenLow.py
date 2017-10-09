@@ -18,7 +18,8 @@ pd.data[0] = pd.data[0].str.replace("\[.+?\]", "")
 
 # 半角から全角へ（数字を除く）
 for data in pd.data[0].iteritems():
-    pd.tmp.append(mojimoji.han_to_zen(data[1], digit=False))
+    #pd.tmp.append(mojimoji.han_to_zen(data[1], digit=False))
+    pd.tmp.append(mojimoji.han_to_zen(mojimoji.zen_to_han(data[1], kana=False, ascii=False), digit=False)) # 数字だけ半角で、カナとローマ字は全角
 pd.datum = pd.DataFrame(pd.tmp)
 
 # 同意義語の表記統一
