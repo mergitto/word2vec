@@ -17,3 +17,4 @@ wiki-sug/
 sugSample/*.txt
 sugSample/*.csv
 word2meishi.py
+doc2vec/train.py
