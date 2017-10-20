@@ -65,6 +65,3 @@ model = Doc2Vec(documents=training_code, size=100 , window=3, min_count=1, dm=1)
 
 model.save('./doc2vec.model')
 
-for i in model.docvecs.most_similar(['日本電信電話株式会社（NTT持株会社）']):
-    print(i[0], i[1])
-
