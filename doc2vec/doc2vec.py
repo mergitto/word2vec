@@ -48,10 +48,10 @@ for i, di in enumerate(df[2]):
         w = di
 
     if 'list' in str(type(w)):
-        print('No.', i, w[:30])
+        #print('No.', i, w[:30])
         wakachi_list += [w.split(' ')]
     else:
-        print('X No.', i, w)
+        #print('X No.', i, w)
         wakachi_list += [w]
 
 wakati = pd.DataFrame(wakachi_list, columns=['wakati'])
@@ -61,7 +61,7 @@ training_code = []
 for i in dfwakati.iterrows():
     training_code.append(TaggedDocument(words=i[1]['wakati'].split(), tags=[str(i[1][1])]))
 
-model = Doc2Vec(documents=training_code, size=100 , window=3, min_count=1, dm=1)
+model = Doc2Vec(documents=training_code, size=100 , window=10, min_count=1, dm=1, iter=50)
 
-model.save('./doc2vec.model')
+model.save('./doc2vec-ws-10-epo-50.model')
 
