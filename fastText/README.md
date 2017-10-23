@@ -2,7 +2,8 @@
 まずはfastTextをインストールして、makeするまでを終わらせた状態だとする
 [FacebookのfastTextでFastに単語の分散表現を獲得する](https://qiita.com/icoxfog417/items/42a95b279c0b7ad26589 "FacebookのfastTextでFastに単語の分散表現を獲得する")
 
-おそらくfasttextシェルが作成されているはずなので、これを利用して学習させる
+おそらくfasttextシェルが作成されているはずなので、これを利用して学習させる  
+[fastTextのソース](https://github.com/facebookresearch/fastText)
 ```
 ./fasttext skipgram -input 分かち書きしたテキスト.txt -output model -dim 100 -ws 15 -epoch 100
 ```
