@@ -1,5 +1,6 @@
 ### GloVeでの分散学習方法
 同フォルダ内に、build、eval、分かち書き済みコーパスがあることを確認する
+[GloVeのソースコード](https://github.com/stanfordnlp/GloVe)
 
 1. `build/vocab_count -min-count 1 -verbose 2 < 分かち書き済みコーパスファイル > vocab.txt`
 1. `build/cooccur -memory 4.0 -vocab-file vocab.txt -verbose 2 -window-size 15 <分かち書き済みコーパスファイル> cooccurrence.bin`
