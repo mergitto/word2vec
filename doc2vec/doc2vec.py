@@ -62,7 +62,7 @@ for i in dfwakati.iterrows():
     training_code.append(TaggedDocument(words=i[1]['wakati'].split(), tags=[str(i[1]['企業名'])]))
 
 # dm=0 DBOW dm=1 dmpv
-model = Doc2Vec(documents=training_code, size=300 , window=15, min_count=1, dm=0, iter=400, negative=5, sample=1e-6)
+model = Doc2Vec(documents=training_code, size=300 , window=15, min_count=1, dm=1, iter=400, negative=5, sample=1e-6)
 
 model.save('~/Develop/word2vec/doc2vec/dmpv-ws-15-epo-400-ns-5.model')
 
