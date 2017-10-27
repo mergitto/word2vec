@@ -51,4 +51,4 @@ dfDropCo[1] = df[[0, 2, 3]].apply(lambda x: '{} {} {}'.format(x[0], x[2], x[3]),
 dfDropCo.columns = ['企業名','テキスト']
 dfDropCo = dfDropCo.dropna(subset=['企業名'])
 
-dfDropCo.to_csv('~/Develop/word2vec/doc2vec/AllAdviceKaiDrop.csv', index=None)
+dfDropCo.to_csv('~/Develop/word2vec/doc2vec/allAdviceKaiDrop.csv', index=None)
